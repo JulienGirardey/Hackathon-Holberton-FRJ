@@ -44,7 +44,7 @@ class QuickLinksUI {
       </div>
 
       <div class="search-section">
-        <input type="text" id="searchInput" placeholder="Rechercher un lien..." class="search-input">
+        <input type="text" id="searchInput" placeholder="Rechercher un raccourcie..." class="search-input">
         <select id="categoryFilter" class="category-select">
           <option value="all">Toutes les catégories</option>
           <option value="education">🎓 Éducation</option>
