@@ -32,7 +32,10 @@ class QuickLinksUI {
     this.container.className = 'quick-links-ui';
     this.container.innerHTML = `
       <div class="header">
-        <h1><img src="src/logo pocket link.png" alt="Logo" style="width: 32px; height: 32px; vertical-align: middle; margin-right: 8px;">Pocket Links</h1>
+        <div class="logo-title">
+          <img src="src/ChatGPT_Image_19_juil._2025__05_34_26-removebg-preview.png" alt="Pocket Links Logo" class="logo" />
+          <h1>🔗 Pocket Links</h1>
+        </div>
         <p>Accès rapide à vos applications favorites</p>
       </div>
 
