@@ -44,7 +44,7 @@ class QuickLinksUI {
       </div>
 
       <div class="search-section">
-        <input type="text" id="searchInput" placeholder="Rechercher un lien..." class="search-input">
+        <input type="text" id="searchInput" placeholder="Rechercher un raccourcie..." class="search-input">
         <select id="categoryFilter" class="category-select">
           <option value="all">Toutes les catégories</option>
           <option value="education">🎓 Éducation</option>
@@ -134,6 +134,14 @@ class QuickLinksUI {
       this.currentCategory = e.target.value;
       this.render();
     });
+
+	document.addEventListener('click', (e) => {
+		if (e.target.classList.contains('delete-btn')) {
+			e.stopPropagation();
+			const linkId = e.target.closest('.link-card').dataset.linkId
+			this.handleDeleteLink(linkId);
+		}
+	})
   }
 
   toggleAddForm(show = null) {
@@ -278,20 +286,18 @@ class QuickLinksUI {
 
     linksList.innerHTML = filteredLinks.map(link => `
       <div class="link-card" data-link-id="${link.id}">
-        <div class="link-icon" onclick="quickLinksUI.handleOpenLink('${link.id}')" title="Ouvrir ${link.name}">
+        <div class="link-icon" title="Ouvrir ${link.name}">
           ${link.icon}
         </div>
         <div class="link-info">
           <div class="link-name">${this.escapeHtml(link.name)}</div>
-          <div class="link-url">${this.escapeHtml(link.url)}</div>
           <div class="link-meta">
             <span class="link-category">${this.getCategoryIcon(link.category)} ${link.category}</span>
-            ${link.clickCount > 0 ? `<span class="link-usage">👆 ${link.clickCount}x</span>` : ''}
           </div>
         </div>
         ${!link.isDefault ? `
           <div class="link-actions">
-            <button class="action-btn delete-btn" onclick="event.stopPropagation(); quickLinksUI.handleDeleteLink('${link.id}')" title="Supprimer">
+            <button class="action-btn delete-btn"; quickLinksUI.handleDeleteLink('${link.id}')" title="Supprimer">
               🗑️
             </button>
           </div>
