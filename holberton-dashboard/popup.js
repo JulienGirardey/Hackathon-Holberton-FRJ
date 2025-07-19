@@ -1,4 +1,4 @@
-// Popup pour Quick Links Dashboard
+// Popup pour Pocket Links
 class PopupQuickLinks {
   constructor() {
     this.links = [];

@@ -27,6 +27,31 @@
     font-size: 14px;
 }
 
+/* Logo et titre */
+.logo-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 8px;
+    flex-direction: row;
+}
+
+.logo-title h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #0a0b0e;
+    display: inline;
+}
+
+.logo {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+    margin-right: 4px;
+    vertical-align: middle;
+}
+
 /* Controls */
 .controls {
     display: flex;
