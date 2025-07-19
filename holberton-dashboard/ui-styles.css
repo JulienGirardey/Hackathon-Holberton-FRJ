@@ -18,12 +18,12 @@
 .header h1 {
     margin: 0 0 8px 0;
     font-size: 24px;
-    color: #1f2937;
+    color: #0a0b0e;
 }
 
 .header p {
     margin: 0;
-    color: #6b7280;
+    color: #000000;
     font-size: 14px;
 }
 
@@ -47,18 +47,18 @@
 }
 
 .btn-primary {
-    background: #3b82f6;
-    color: white;
+    background: #e12f2f;
+    color: rgb(142, 59, 59);
 }
 
 .btn-primary:hover {
-    background: #2563eb;
+    background: #dc2626;
     transform: translateY(-1px);
 }
 
 .btn-secondary {
     background: #e5e7eb;
-    color: #374151;
+    color: #020202;
 }
 
 .btn-secondary:hover {
@@ -87,8 +87,8 @@
 
 .search-input:focus, .category-select:focus {
     outline: none;
-    border-color: #3b82f6;
-    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+    border-color: #ef4444;
+    box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
 }
 
 /* Stats */
@@ -112,7 +112,7 @@
     display: block;
     font-size: 24px;
     font-weight: bold;
-    color: #3b82f6;
+    color: #ef4444;
 }
 
 .stat-label {
@@ -137,7 +137,7 @@
 }
 
 .clip-item:hover {
-    border-color: #3b82f6;
+    border-color: #ef4444;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     transform: translateY(-2px);
 }
@@ -148,8 +148,8 @@
 }
 
 .clip-item.opened {
-    background: #dbeafe;
-    border-color: #3b82f6;
+    background: #fee2e2;
+    border-color: #ef4444;
 }
 
 .clip-header {
@@ -160,8 +160,8 @@
 }
 
 .clip-type {
-    background: #dbeafe;
-    color: #1d4ed8;
+    background: #fee2e2;
+    color: #dc2626;
     padding: 4px 8px;
     border-radius: 4px;
     font-size: 12px;

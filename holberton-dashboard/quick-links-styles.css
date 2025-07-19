@@ -19,7 +19,7 @@
     margin: 0 0 8px 0;
     font-size: 28px;
     color: #1f2937;
-    background: linear-gradient(45deg, #3b82f6, #8b5cf6);
+    background: linear-gradient(45deg, #ef4444, #dc2626);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -55,14 +55,14 @@
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+    background: linear-gradient(135deg, #ef4444, #dc2626);
     color: white;
-    box-shadow: 0 4px 14px rgba(59, 130, 246, 0.3);
+    box-shadow: 0 4px 14px rgba(239, 68, 68, 0.3);
 }
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
+    box-shadow: 0 6px 20px rgba(239, 68, 68, 0.4);
 }
 
 .btn-secondary {
@@ -101,8 +101,8 @@
 
 .search-input:focus, .category-select:focus {
     outline: none;
-    border-color: #3b82f6;
-    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.1);
+    border-color: #ef4444;
+    box-shadow: 0 0 0 4px rgba(239, 68, 68, 0.1);
 }
 
 /* Stats */
@@ -127,7 +127,7 @@
     display: block;
     font-size: 32px;
     font-weight: bold;
-    color: #3b82f6;
+    color: #ef4444;
     margin-bottom: 4px;
 }
 
@@ -149,7 +149,7 @@
 
 .form-container h3 {
     margin: 0 0 20px 0;
-    color: #1f2937;
+    color: #7c2020;
     font-size: 18px;
 }
 
@@ -161,7 +161,7 @@
     display: block;
     margin-bottom: 6px;
     font-weight: 500;
-    color: #374151;
+    color: #992936;
     font-size: 14px;
 }
 
@@ -178,8 +178,8 @@
 .form-group input:focus,
 .form-group select:focus {
     outline: none;
-    border-color: #3b82f6;
-    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+    border-color: #ef4444;
+    box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
 }
 
 .form-actions {
@@ -210,7 +210,7 @@
 .link-card:hover {
     transform: translateY(-4px);
     box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-    border-color: #3b82f6;
+    border-color: #ef4444;
 }
 
 .link-icon {
@@ -263,8 +263,8 @@
 }
 
 .link-usage {
-    background: #dbeafe;
-    color: #1d4ed8;
+    background: #fee2e2;
+    color: #dc2626;
 }
 
 .link-actions {
