@@ -1,4 +1,4 @@
-// Point d'entrée principal pour l'extension Quick Links Dashboard
+// Point d'entrée principal pour l'extension Pocket Links
 
 // Variables globales pour l'extension
 let quickLinksManager;
@@ -34,7 +34,7 @@ async function loadModules() {
 // Initialisation de l'extension
 async function initializeExtension() {
   try {
-    console.log('🚀 Initialisation Quick Links Dashboard...');
+    console.log('� Initialisation Pocket Links...');
     
     // Charger les modules
     await loadModules();

@@ -228,35 +228,6 @@ class QuickLinksManager {
     return categories.sort();
   }
 
-  // Exporter les liens personnalisés
-  exportLinks() {
-    const customLinks = this.links.filter(link => !link.isDefault);
-    return JSON.stringify(customLinks, null, 2);
-  }
-
-  // Importer des liens
-  async importLinks(jsonData) {
-    try {
-      const importedLinks = JSON.parse(jsonData);
-      
-      for (const linkData of importedLinks) {
-        // Vérifier si le lien existe déjà
-        const exists = this.links.some(link => 
-          link.url === linkData.url || link.name === linkData.name
-        );
-        
-        if (!exists) {
-          await this.addLink(linkData);
-        }
-      }
-      
-      return true;
-    } catch (error) {
-      console.error('Erreur import:', error);
-      return false;
-    }
-  }
-
   // Réinitialiser aux liens par défaut
   async resetToDefaults() {
     this.links = [...this.defaultLinks];
