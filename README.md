@@ -1,1 +1,0 @@
-# Hackathon-Holberton-FRJ
