@@ -245,6 +245,27 @@ class QuickLinksManager {
     }
     return url;
   }
+
+  // Obtenir les catégories disponibles
+  getCategories() {
+    const categories = [...new Set(this.links.map(link => link.category))];
+    return categories.sort();
+  }
+
+  // Générer un ID unique
+  generateId() {
+    return 'link_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+  }
+
+  // Normaliser une URL
+  normalizeUrl(url) {
+    if (!url) return '';
+    url = url.trim();
+    if (!url.startsWith('http://') && !url.startsWith('https://')) {
+      url = 'https://' + url;
+    }
+    return url;
+  }
 }
 
 // Exposer globalement

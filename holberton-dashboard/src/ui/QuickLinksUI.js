@@ -199,6 +199,10 @@ class QuickLinksUI {
   }
 
   async handleOpenLink(linkId) {
+    if (!this.manager) {
+      console.error('Manager non initialisé');
+      return;
+    }
     await this.manager.openLink(linkId);
     this.render(); // Mettre à jour les stats
   }
@@ -217,6 +221,12 @@ class QuickLinksUI {
   }
 
   updateStats() {
+    if (!this.manager || !this.manager.links) {
+      document.getElementById('totalCount').textContent = '0';
+      document.getElementById('customCount').textContent = '0';
+      return;
+    }
+    
     const totalCount = this.manager.links.length;
     const customCount = this.manager.links.filter(link => !link.isDefault).length;
 
@@ -225,6 +235,10 @@ class QuickLinksUI {
   }
 
   updateCategoryFilter() {
+    if (!this.manager || !this.manager.getCategories) {
+      return;
+    }
+    
     const categories = this.manager.getCategories();
     const select = document.getElementById('categoryFilter');
     
